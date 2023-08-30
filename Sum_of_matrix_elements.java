@@ -1,18 +1,20 @@
-import java.util.Scanner;
-import java.util.Arrays;
-public class sum{
+import java.util.*;
+public class mat{
     public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int R=sc.nextInt();
-        int C=sc.nextInt();
+        int R=sc.nextInt(),C=sc.nextInt(),i,j;
         int[][] arr=new int[R][C];
-        int su=0;
-        for(int i=0;i<R;i++)
+        for(i=0;i<R;i++)
         {
-            for(int j=0;j<C;j++)
+            for(j=0;j<C;j++)
             {
                 arr[i][j]=sc.nextInt();
+            }
+        }
+        int su=0;
+        for(i=0;i<R;i++){
+            for(j=0;j<C;j++){
                 su+=arr[i][j];
             }
         }
