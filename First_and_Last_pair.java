@@ -18,4 +18,5 @@ public class pair{
             System.out.print(arr[n/2]+" 0");
         }
     }
+    
 }
